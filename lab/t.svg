@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+  <style>
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .spin { transform-origin: 40px 40px; animation: spin 2s linear infinite; }
+  </style>
+  <rect width="80" height="80" fill="#1b1f3a"/>
+  <g class="spin">
+    <circle cx="40" cy="14" r="8" fill="#ffcc33"/>
+    <circle cx="40" cy="66" r="8" fill="#33ccff"/>
+  </g>
+  <circle cx="40" cy="40" r="6" fill="#ff5577">
+    <animate attributeName="r" values="4;14;4" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+</svg>
